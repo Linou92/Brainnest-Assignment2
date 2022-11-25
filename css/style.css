@@ -1,4 +1,4 @@
-/* Loading font-fanily */
+/* LOADING FONT-FAMILY */
 @font-face {
     font-family: 'Roboto ExtraBold';
     src: url(Roboto/Roboto-Black.ttf) format('truetype');
@@ -23,13 +23,13 @@
     font-style: italic;
 }
 
-/* general setup */
+/* GENERAL SETUP */
 * {
     margin: 0;
     padding: 0;
 }
 
-/* navigation bar */
+/* NAVIGATION BAR */
 header {
     background-color: #1F2937;
     display: flex;
@@ -77,8 +77,8 @@ header {
     color: #F9FAF8;
 }
   
-/* section 1 of the page (introduction) */
-.section1 {
+/* SECTION 1 OF THE PAGE (introduction) */
+.section1, .section {
     background-color: #1F2937;
 }
 
@@ -134,7 +134,7 @@ header {
     width: 100%;
 }
 
-/* section 2 of the page (4 images) */
+/* SECTION 2 OF THE PAGE (4 images) */
 .section2 {
     margin-top: 30px;
     margin-bottom: 150px;
@@ -175,7 +175,7 @@ header {
     font-weight: normal;
 }
 
-/* section 3 of the page (quote) */
+/* SECTION 3 OF THE PAGE (quote) */
 .section3 {
     background-color: #E5E7EB;
     height: 400px;
@@ -193,6 +193,7 @@ blockquote {
     padding-top: 90px;
   
 }
+
 .signature {
     font-family: 'Roboto-Bold', sans-serif;
     font-size: 20px;
@@ -201,7 +202,7 @@ blockquote {
     width: 100%;
 }
 
-/* section 4 of the page (call to action) */
+/* SECTION 4 OF THE PAGE (call to action) */
 .section4 {
     background-color: #3882F6;
     margin: 100px auto;
@@ -239,7 +240,7 @@ blockquote {
     text-align: center;
 }
 
-/* footer */
+/* FOOTER */
 footer {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
@@ -257,25 +258,22 @@ footer {
     color: #E5E7EB;
 }
 
-/* Title for login, contact and about pages */
-
-/*.sectionTitle {
+/* TITLE AND BODY FOR LOGIN, CONTACT AND ABOUT PAGES */
+.sectionTitle {
     font-family: 'Roboto ExtraBold', sans-serif;
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
     padding-top: 10%;
     text-align: center;
-}*/
+}
 
-
-/* Login page */
-
-/*body {
+.loginBody, .aboutBody, .contactBody {
     background: #1F2937;
     font-family: 'Roboto', sans-serif;
 }
 
+/* LOGIN PAGE */
 .login-form {
     background-color: #F9FAF8;
     width: 500px;
@@ -328,45 +326,39 @@ footer {
     color: #E5E7EB;
 }
 
-.action {
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-}
-
-.action button {
-    width: 100%;
-    border: none;
-    padding: 18px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-    text-transform: uppercase;
+input[type=submit] {
     background-color: #3882F6;
+    padding: 18px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
     color: #F9FAF8;
     border-radius: 8px;
     letter-spacing: 0.2px;
     border-style: none;
     text-align: center;
-    margin-left: 30px;
-    margin-bottom: 20px;
-}*/
-
-/* About Us page */
-
-/*body {
-    background: #1F2937;
-    font-family: 'Roboto', sans-serif;
 }
 
+.register {
+    margin-left: 120px;
+}
+
+.signin {
+    margin-left: 40px;
+}
+
+/* ABOUT US PAGE */
 .about {
     background-color: #E5E7EB;
-    height: 800px;
-}*/
+    height: 700px;
+    margin: 50px 0px;
+}
 
-/* contact us page */
-
-/*.contactContainer {
+/* CONTACT US PAGE */
+.contactContainer {
     background-color: #F9FAF8;
     width: 500px;
     margin: 100px auto;
@@ -376,7 +368,7 @@ footer {
 }
 
 
-input[type=text], select, textarea {
+#fname, #lname, select, textarea {
     width: 100%;
     padding: 15px;
     border: none;
@@ -387,7 +379,7 @@ input[type=text], select, textarea {
     font-family: 'Roboto', sans-serif;
 }
 
-input[type=submit] {
+#submit {
     background-color: #3882F6;
     padding: 12px 20px;
     border: none;
@@ -413,4 +405,4 @@ label {
 .contactContainer h1 {
     padding-left: 30px;
 }
-*/
+
