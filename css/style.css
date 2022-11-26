@@ -357,6 +357,10 @@ input[type=submit] {
     margin: 50px 0px;
 }
 
+.signature {
+    padding-top: 30px;
+}
+
 /* CONTACT US PAGE */
 .contactContainer {
     background-color: #F9FAF8;
