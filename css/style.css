@@ -357,6 +357,11 @@ input[type=submit] {
     margin: 50px 0px;
 }
 
+#cert {
+    width: 30%;
+    height: 30%;
+}
+
 /* CONTACT US PAGE */
 .contactContainer {
     background-color: #F9FAF8;
