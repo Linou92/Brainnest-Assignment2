@@ -1,0 +1,24 @@
+/* LOADING FONT-FAMILY */
+@font-face {
+    font-family: 'Roboto ExtraBold';
+    src: url(Roboto/Roboto-Black.ttf) format('truetype');
+    font-style: bolder;
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(Roboto/Roboto-Bold.ttf) format('truetype');
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto/Roboto-Regular.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto ThinItalic';
+    src: url(Roboto/Roboto-ThinItalic.ttf) format('truetype');
+    font-style: italic;
+}

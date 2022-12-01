@@ -1,32 +1,16 @@
-/* LOADING FONT-FAMILY */
-@font-face {
-    font-family: 'Roboto ExtraBold';
-    src: url(Roboto/Roboto-Black.ttf) format('truetype');
-    font-style: bolder;
-}
+@import 'fonts.css';
+@import 'animation.css';
 
-@font-face {
-    font-family: 'Roboto Bold';
-    src: url(Roboto/Roboto-Bold.ttf) format('truetype');
-    font-style: bold;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url(Roboto/Roboto-Regular.ttf) format('truetype');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto ThinItalic';
-    src: url(Roboto/Roboto-ThinItalic.ttf) format('truetype');
-    font-style: italic;
-}
-
-/* GENERAL SETUP */
-* {
+/* general setup */
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* NAVIGATION BAR */
@@ -46,9 +30,9 @@ header {
 }
 
 .logo img {
-    height: 10%;
-    width: 10%;
-    margin-bottom: -30px;
+    height: 5%;
+    width: 5%;
+    margin-bottom: -10px;
 }
 
 .navbar {
@@ -71,173 +55,11 @@ header {
     font-weight: normal;
     font-size: 18px;
     color: #E5E7EB;
+    text-decoration: none;
 }
 
 .nav-item:hover a {
-    color: #F9FAF8;
-}
-  
-/* SECTION 1 OF THE PAGE (introduction) */
-.section1, .section {
-    background-color: #1F2937;
-}
-
-.subSection {
-    display: flex;
-    height: 400px;
-}
-
-.introduction {
-    padding-left: 120px;
-    margin: auto;
-    width: 500px;
-}
-
-.section1Title {
-    font-family: 'Roboto ExtraBold', sans-serif;
-    font-size: 48px;
-    font-weight: bolder;
-    color: #F9FAF8;
-    padding-top: 10%;
-}
-
-.section1Subtext {
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    font-size: 18px;
-    color: #E5E7EB;
-    max-width: 90%;
-}
-
-.signUpButton {
-    font-family: 'Roboto Bold', sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    background-color: #3882F6;
-    color: #F9FAF8;
-    border-style: none;
-    height: 30px;
-    width: 110px;
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.placeholder {
-    height: 200px;
-    width: 500px; 
-    margin: auto;
-    margin-right: 140px; 
-}
-
-.placeholder img {
-    width: 100%;
-}
-
-/* SECTION 2 OF THE PAGE (4 images) */
-.section2 {
-    margin-top: 30px;
-    margin-bottom: 150px;
-}
-
-.section2Title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: bolder;
-    font-family: 'Roboto ExtraBold', sans-serif;
-    color: #1F2937;
-    margin-bottom: 30px;
-}
-
-.images {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.img1, .img2, .img3, .img4 {
-    height: 150px;
-    width: 150px;
-}
-
-.images img {
-    height: 100%;
-    width: 100%;
-    border: solid;
-    border-radius: 20px;
-    border-color: #3882F6;
-}
-
-.imgText {
-    text-align: center;
-    color: #1F2937;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-}
-
-/* SECTION 3 OF THE PAGE (quote) */
-.section3 {
-    background-color: #E5E7EB;
-    height: 400px;
-}
-
-blockquote {
-    font-size: 36px;
-    font-family: 'RobotoThinItalic', sans-serif;
-    font-style: italic;
-    color: #1F2937;
-    text-align: center left;
-    font-weight: lighter;
-    width: 800px;
-    margin: auto;
-    padding-top: 90px;
-  
-}
-
-.signature {
-    font-family: 'Roboto-Bold', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: right;
-    width: 100%;
-}
-
-/* SECTION 4 OF THE PAGE (call to action) */
-.section4 {
-    background-color: #3882F6;
-    margin: 100px auto;
-    padding: 40px;
-    width: 50%;
-    border-radius: 10px;
-    display: flex;
-    gap: 80px;
-}
-
-.section4Title {
-    font-family: 'Roboto-Bold', sans-serif;
-    font-weight: bold;
-    color: #F9FAF8;
-}
-
-.section4subText {
-    font-family: 'Roboto', sans-serif;
-    color: #F9FAF8;
-    font-weight: normal;
-    font-size: small;
-}
-
-.signUpButton2 {
-    color: #F9FAF8;
-    font-family: 'Roboto Bold', sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    background-color: #3882F6;
-    border-style: solid;
-    border-color: #F9FAF8;
-    height: 30px;
-    width: 110px;
-    border-radius: 8px;
-    text-align: center;
+    border-bottom: 3px solid #3882F6;
 }
 
 /* FOOTER */
@@ -249,164 +71,29 @@ footer {
     text-align: center;
     height: 60px;
     padding-top: 30px;
+    margin-top: auto;
 }
 
-.top {
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    font-size: 18px;
-    color: #E5E7EB;
+a.top {
+    --offset: 100px;
+    margin-left: calc(100vw - 180px);
+    margin-top: calc(100vh + var(--offset));
+    padding: 10px 20px;
+    position: sticky;
+    bottom: 24px;
+    border: 1px dashed;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fff;
+    background: #3882f6;
 }
 
-/* TITLE AND BODY FOR LOGIN, CONTACT AND ABOUT PAGES */
 .sectionTitle {
     font-family: 'Roboto ExtraBold', sans-serif;
     font-size: 48px;
     font-weight: bolder;
-    color: #F9FAF8;
+    color: #1F2937;
     padding-top: 10%;
     text-align: center;
 }
-
-.loginBody, .aboutBody, .contactBody {
-    background: #1F2937;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* LOGIN PAGE */
-.login-form {
-    background-color: #F9FAF8;
-    width: 500px;
-    margin: 200px auto;
-    display: flex;
-    border-radius: 4px;
-}
-
-.subtitle {
-    text-align: center;
-    font-size: 36px;
-    font-weight: bolder;
-    font-family: 'Roboto ExtraBold', sans-serif;
-    color: #1F2937;
-    margin: 30px 0px;
-    padding-left: 140px;
-    
-}
-
-.content {
-    background-color: #F9FAF8;
-    padding: 40px 20px;
-    text-align: center;
-    margin-left: 120px;
-}
-
-.input-field {
-    padding: 15px 10px;
-}
-
-.input-field input {
-    font-size: 16px;
-    display: block;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    padding: 10px 1px;
-    border: 0;
-    border-bottom: 1px solid #747474;
-    background-color: #F9FAF8;
-}
-
-.link {
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    font-size: 18px;
-    color: #1F2937;
-}
-
-.link:hover {
-    color: #E5E7EB;
-}
-
-input[type=submit] {
-    background-color: #3882F6;
-    padding: 18px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 20px;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #F9FAF8;
-    border-radius: 8px;
-    letter-spacing: 0.2px;
-    border-style: none;
-    text-align: center;
-}
-
-.register {
-    margin-left: 120px;
-}
-
-.signin {
-    margin-left: 40px;
-}
-
-/* ABOUT US PAGE */
-.about {
-    background-color: #E5E7EB;
-    height: 700px;
-    margin: 50px 0px;
-}
-
-.signature {
-    padding-top: 30px;
-}
-
-/* CONTACT US PAGE */
-.contactContainer {
-    background-color: #F9FAF8;
-    width: 500px;
-    margin: 100px auto;
-    display: flex;
-    border-radius: 4px;
-    padding-top: 20px;
-}
-
-
-#fname, #lname, select, textarea {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    font-family: 'Roboto', sans-serif;
-}
-
-#submit {
-    background-color: #3882F6;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 200px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #F9FAF8;
-    border-radius: 8px;
-    letter-spacing: 0.2px;
-    border-style: none;
-    text-align: center;
-}
-
-label {
-    color:#1F2937;
-    margin-left: 20px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.contactContainer h1 {
-    padding-left: 30px;
-}
-

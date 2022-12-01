@@ -4,73 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/homepage.css">
     <title>SmallLearners</title>
 </head>
 <body>
-    <section class="section1" id="top">
-        <header>
-            <div class="logo">
-                SmallLearners
-                <img src="img/logo.png" alt="red pencil in a building form with color hands and kids school text"> 
-            </div>
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li class="nav-item">
-                        <a href="pages/login.html">Log in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="pages/aboutUs.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="pages/contactUs.html">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div class="subSection">
-            <div class="introduction">
-                <h1 class="section1Title">Learning with us is fun !</h1>
-                <p class="section1Subtext">This website is made for the small ones who want to learn 
-                    in an interactive and funny way. Sign up and join us on this adventure. It's free !
-                </p>
-                <button type="button" class="signUpButton">Sign up</button>
-            </div>
-            <div class="placeholder">
-                <img src="img/courses.jpeg" alt="word courses inside a white background taped in a blue background"> 
-            </div>
+    <header class="header-area">
+        <div class="logo">
+            SmallLearners
+            <img src="img/logo.png" alt="red pencil in a building form with color hands and kids school text"> 
         </div>
-    </section>
-    <main class="container">
-        <section class="section2">
-            <div class="section2Title">
-                Here are some of the classes we propose.
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a href="pages/login.html">Log in</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/aboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/contactUs.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+   <main class="container">
+        <section class="section1">
+            <div class="subSection">
+                <div class="introduction">
+                    <h1 class="section1Title">Learning with us is fun !</h1>
+                    <p class="section1Subtext">This website is made for the small ones who want to learn 
+                        in an interactive and funny way. Sign up and join us on this adventure. It's free !
+                    </p>
+                    <button type="button" class="signUpButton">Sign up</button>
+                </div>
+                <div class="placeholder">
+                    <img src="img/courses.jpeg" alt="word courses inside a white background taped in a blue background"> 
+                </div>
             </div>
+        </section>
+        <section class="section2">
+            <h2 class="section2Title">
+                Here are some of the classes we propose.
+            </h2>
             <div class="images">
-                <div class="img1">
+                <figure class="img1">
                     <a href="https://www.youtube.com/watch?v=j-3eArinB7E" target="_blank">
                         <img src="img/code.png" alt="funny cartoon colored html tag">
                     </a>
-                    <p class="imgText">Come code with me and be an amazing little programmer! </p>
-                </div>
-                <div class="img2">
+                    <figcaption class="imgText">Click me to code with me and be an amazing little programmer! </figcaption>
+                </figure>
+                <figure class="img2">
                     <a href="https://www.youtube.com/watch?v=8irSFvoyLHQ" target="_blank">
                         <img src="img/english.jpeg" alt="cartoon kids holding english written in a flag">
                     </a>
-                    <p class="imgText">Come learn a new language with me and be an incredible speaker!</p>
-                </div>
-                <div class="img3">
+                    <figcaption class="imgText">Click me to learn a new language with me and be an incredible speaker!</figcaption>
+                </figure>
+                <figure class="img3">
                     <a href="https://www.youtube.com/watch?v=igcoDFokKzU" target="_blank">
                         <img src="img/math.jpeg" alt="cartoon kids climbing on numbers coming out from a book">
                     </a>
-                    <p class="imgText">Come count with me and be a human calculator!</p>
-                </div>
-                <div class="img4">
+                    <figcaption class="imgText">Click me to count with me and be a human calculator!</figcaption>
+                </figure>
+                <figure class="img4">
                     <a href="https://www.youtube.com/watch?v=lv6dC0coQeI" target="_blank">
                         <img src="img/science.png" alt="cartoon science jar">
                     </a>
-                    <p class="imgText">Come experiment with me and be the next scientist!</p>
-                </div>
+                    <figcaption class="imgText">Click me to experiment with me and be the next scientist!</figcaption>
+                </figure>
             </div>
         </section>
         <section class="section3">
@@ -82,9 +83,9 @@
         </section>
         <section class="section4">
             <div class="box">
-                <p class="section4Title"> 
+                <h3 class="section4Title"> 
                     It's time to sign up. It's free !
-                </p>
+                </h3>
                 <p class="section4subText">
                     Sign up to teach your kids amazing content and allow their imagination to rise.
                 </p>
@@ -95,11 +96,11 @@
                 </button>
             </div>
         </section>
+        <a href="#" class="top">Go up &#8593;</a>
     </main>
-    <footer>
-        
-        Copyright &copy; Brainnest 2022. Designed by Lina Abu Hijleh.<br>
-        <a class="top" href="#top">Top</a><br>
+
+    <footer class="footer">
+        Copyright &copy; Brainnest 2022. Designed by Lina Abu Hijleh.
     </footer>
 
 </body>
